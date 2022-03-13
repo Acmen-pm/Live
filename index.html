@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/elelogo.ico" />
+    <title>象鱼直播官方下载</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="nav_box">
+            <div class="flex_row nav_content">
+                <a>
+                    <img src="./img/logo.png" alt="">
+                </a>
+                <ul class="flex_row nav_ul" id="Header">
+                    <li class="active">
+                        <a onclick="ChangePage(0)">PC客户端</a>
+                    </li>
+                    <li>
+                        <a onclick="ChangePage(1)">APP下载</a>
+                    </li>
+                    <li>
+                        <a onclick="ChangePage(2)">关于我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <ul class="content_ul" id="pageContainer">
+                <li class="active">
+                    <div class="page_container">
+                        <div class="page_img">
+                            <img src="./img/pc.png" alt="">
+                        </div>
+                        <div class="page_text">
+                            <h1>象鱼直播PC客户端</h1>
+                            <p>优质语音及视频直播软件，稳定多人实时语音、娱乐交友直播玩不停</p>
+                            <div class="page_min_img">
+                                <img src="./img/pc.png" alt="">
+                            </div>
+                            <a class="pc_download">立即下载</a>
+                            <p class="version_info">
+                                <span style="margin-right:100px">版本号：1.1</span>
+                                <span>文件大小：245M</span>
+                                <span>更新时间：2021年12月08日</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="page_container">
+                        <div class="page_text app_text">
+                            <h1>象鱼直播</h1>
+                            <p>全民娱乐互动直播平台，上象鱼，一起玩。各种精彩内容，应有尽有，还在等什么赶快加入进来吧！</p>
+                            <div class="page_min_img app_mini_img">
+                                <img src="./img/app.png" alt="">
+                            </div>
+                            <img src="./img/qr_code.png" alt="" class="code_img">
+                            <div class="code_text">
+                                扫码下载象鱼APP
+                            </div>
+                        </div>
+                        <div class="page_img app_img">
+                            <img src="./img/app.png" alt="">
+                        </div>
+                    </div>
+                </li>
+                <li class="about_item">
+                    <div class="page_container">
+                        <div class="page_img about_img">
+                            <img src="./img/about_us.png" alt="">
+                        </div>
+                        <div class="page_text">
+                            &&&&&
+                            <h1 class="about_title">About us</h1>
+                            <p class="about_para">
+                                公司名称：江苏象鱼互娱网络科技有限公司
+                                <br>
+                                邮编：224000
+                                <br>
+                                电子邮件：abc329099907@163.com
+                                <br>
+                                QQ：2168418842
+                                <br>
+                                公司简介：直播精彩人生！
+                            </p>
+
+                        </div>
+                    </div>
+                    <p class="about_right">经营许可证编号：苏B2-20211002</p>
+                </li>
+            </ul>
+            <div class="slide_box">
+                <ul id="slideBox">
+                    <li class="active" onclick="ChangePage(0)">
+                        <i class="iconfont">&#xe66e;</i>
+                        <span>pc客户端</span>
+                    </li>
+                    <li onclick="ChangePage(1)">
+                        <i class="iconfont">&#xe66f;</i>
+                        <span>APP下载</span>
+                    </li>
+                    <li onclick="ChangePage(2)">
+                        <i class="iconfont">&#xe69d;</i>
+                        <span>About</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="mouse_slide slide_down">
+                <img src="./img/mousedown.png" onclick="MouseClick('down')" id="mouseSlidedown" class="active">
+            </div>
+            <div class="mouse_slide slide_up">
+                <img src="./img/mouseup.png" onclick="MouseClick('up')" id="mouseSlideup">
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/page.js"></script>
+</body>
+
+</html>
